@@ -52,6 +52,7 @@ exports.register = async (req, res) => {
 
     } catch (err) { return res.status(422).json(err.message) }
 }
+// test 1
 exports.login = async (req, res) => {
     try {
 
@@ -78,6 +79,7 @@ exports.login = async (req, res) => {
 
     } catch (err) { return res.status(422).json(err.message) }
 }
+// test 1
 exports.getme = async (req, res) => {
     try {
 
@@ -86,3 +88,4 @@ exports.getme = async (req, res) => {
 
     } catch (err) { return res.status(422).json(err.message) }
 }
+// test 1
