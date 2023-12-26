@@ -155,6 +155,7 @@ exports.getAllCourse = async (req, res) => {
         const course = await courseModel.find({ category: cat._id })
             .populate("teacher", "UserName")
             .populate("category", "href")
+            .sort({ _id: -1 })
             .lean()
 
         if (course.length === 0) {
@@ -305,6 +306,7 @@ exports.getAll = async (req, res) => {
         const courses = await courseModel.find({})
             .populate("teacher", "UserName")
             .populate("category", "href")
+            .sort({ _id: -1 })
             .lean()
 
         if (courses.length == 0) {
