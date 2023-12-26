@@ -25,12 +25,13 @@ exports.setCategory = async (req, res) => {
         return res.status(422).json(err.message)
     }
 }
+// test 1
 exports.getOne = async (req, res) => {
     try {
 
         const isvalidID = mongoose.Types.ObjectId.isValid(req.params.id)
         if (!isvalidID) {
-            return res.json({ message: "Invalid ObjectId !!" })
+            return res.status(422).json({ message: "Invalid ObjectId !!" })
         }
 
         const category = await categoryModel.findOne({ _id: req.params.id }).lean()
@@ -44,9 +45,10 @@ exports.getOne = async (req, res) => {
         return res.status(422).json(err.message)
     }
 }
+// test 1
 exports.getAll = async (req, res) => {
     try {
-        const category = await categoryModel.find({}).lean()
+        const category = await categoryModel.find({}).sort({ _id: -1 }).lean()
 
         if (category.length === 0) {
             return res.status(404).json({ message: "There in no Category !!" })
@@ -57,12 +59,13 @@ exports.getAll = async (req, res) => {
         return res.status(422).json(err.message)
     }
 }
+// test 1
 exports.removeOne = async (req, res) => {
     try {
 
         const isvalidID = mongoose.Types.ObjectId.isValid(req.params.id)
         if (!isvalidID) {
-            return res.json({ message: 'Invalid Object ID' })
+            return res.status(422).json({ message: 'Invalid Object ID' })
         }
         const category = await categoryModel.findOneAndRemove({ _id: req.params.id }).lean()
         if (!category) {
@@ -74,3 +77,4 @@ exports.removeOne = async (req, res) => {
         return res.status(422).json(err.message)
     }
 }
+// test 1
