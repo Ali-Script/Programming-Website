@@ -15,6 +15,7 @@ const categoryRouter = require('./routes/v1/categoryRouter');
 const newsletterRouter = require('./routes/v1/newsletterRouter');
 const commentRouter = require('./routes/v1/commentRouter');
 const contactUsRouter = require('./routes/v1/contactUsRouter');
+const departmentRouter = require('./routes/v1/departmentRouter');
 const searchRouter = require('./routes/v1/searchRouter');
 const notificationRouter = require('./routes/v1/notificationRouter');
 const authMiddleware = require('./middlewares/authMiddleware');
@@ -46,6 +47,7 @@ app.use("/v1/notification", notificationRouter);
 app.use("/v1/off", offRouter);
 app.use("/v1/ticket", ticketRouter);
 app.use("/v1/menu", menuRouter);
+app.use("/v1/department", departmentRouter);
 
 // Manual Route^
 app.use((req, res) => {
