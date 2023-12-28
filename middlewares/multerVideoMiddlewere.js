@@ -12,7 +12,7 @@ const storage = multer.diskStorage({
             const fileunicname = Date.now() + Math.random() * 100
             const extname = path.extname(file.originalname)
 
-            const validFormat = [".mp4", ".mkv", ".png"]
+            const validFormat = [".mp4", ".mkv"]
 
             if (validFormat.includes(extname)) {
                 cb(null, fileunicname + extname)
