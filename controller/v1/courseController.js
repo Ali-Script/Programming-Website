@@ -251,7 +251,7 @@ exports.relatedCourse = async (req, res) => {
 
         const { href } = req.params;
 
-        const course = await courseModel.findOne({ href });
+        const course = await courseModel.findOne({ href }).sort({ _id: -1 }).sort({ _id: -1 }).lean()
         if (!course) {
             return res.status(404).json({ message: "Course Not Found" })
         }
@@ -266,7 +266,7 @@ exports.relatedCourse = async (req, res) => {
 }
 exports.popular = async (req, res) => {
     try {
-        const courses = await courseModel.find({})
+        const courses = await courseModel.find({}).sort({ _id: -1 }).lean()
 
         if (courses.length === 0) return res.status(422).json({ message: "popular courses found: [0]" })
 
@@ -285,7 +285,7 @@ exports.popular = async (req, res) => {
 }
 exports.presell = async (req, res) => {
     try {
-        const courses = await courseModel.find({ status: "presell" })
+        const courses = await courseModel.find({ status: "presell" }).sort({ _id: -1 }).lean()
 
         if (courses.length == 0) {
             return res.status(404).json({ message: "There is no presell course !" })
