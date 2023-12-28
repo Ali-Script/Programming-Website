@@ -48,7 +48,7 @@ exports.getOne = async (req, res) => {
 // test 1
 exports.getAll = async (req, res) => {
     try {
-        const category = await categoryModel.find({}).sort({ _id: -1 }).lean()
+        const category = await categoryModel.find({}).sort({ _id: -1 }).sort({ _id: -1 }).lean()
 
         if (category.length === 0) {
             return res.status(404).json({ message: "There in no Category !!" })
