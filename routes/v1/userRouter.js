@@ -5,7 +5,6 @@ const userController = require("./../../controller/v1/userController");
 const authMiddleware = require("./../../middlewares/authMiddleware");
 const isAdmin = require("./../../middlewares/isAdmin");
 
-
 router
     .route('/banUser/:id')
     .put(authMiddleware, isAdmin, userController.banUser)
