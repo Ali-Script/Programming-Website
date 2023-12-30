@@ -8,6 +8,6 @@ const router = express.Router();
 
 router
     .route("/search/:keyword")
-    .get(searchController.search)
+    .get(authMiddleware, searchController.search)
 
 module.exports = router;
