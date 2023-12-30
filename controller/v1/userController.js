@@ -54,17 +54,22 @@ exports.getAll = async (req, res) => {
 exports.removeOneUser = async (req, res) => {
     try {
 
+        const { id } = req.params;
         const isvalidID = mongoose.Types.ObjectId.isValid(req.params)
         if (!isvalidID) {
             return res.status(403).json({ message: "Object ID is not valid !!" })
         }
 
-        const checkUser = await UserModel.findById({ _id: req.params.id }).lean()
-        if (checkUser.role === 'admin') {
+        const checkUser = await UserModel.findById({ _id: req.params.id }).lean();
+        if (!checkUser) {
+            return res.status(404).json({ message: "User not found !!" })
+        }
+        else if (checkUser.role === 'admin') {
             return res.status(400).json({ message: "You Cant Remove Another Admins" })
         }
 
-        const { id } = req.params;
+
+
         const user = await UserModel.findOneAndRemove({ _id: id })
 
         return res.json({ message: `User Removed Succsessfully !!`, user })
@@ -73,29 +78,33 @@ exports.removeOneUser = async (req, res) => {
         return res.status(422).json({ message: err.message })
     }
 }
+// test 1
 exports.makeAdmin = async (req, res) => {
-
     try {
-        const isvalidID = mongoose.Types.ObjectId.isValid(req.params)
 
+        const isvalidID = mongoose.Types.ObjectId.isValid(req.params.id)
         if (!isvalidID) {
             return res.status(403).json({ message: "Object ID is not valid !!" })
         }
+
         const checkUser = await UserModel.findById({ _id: req.params.id }).lean()
         if (!checkUser) {
             return res.status(403).json({ message: "Unknown User !!" })
         }
-        if (checkUser.role === 'admin') {
+        else if (checkUser.role === 'admin') {
             return res.status(400).json({ message: "You Cant Update 'Admin' to 'Admin' " })
         }
 
-        const { id } = req.params;
-        const user = await UserModel.findOneAndUpdate({
-            _id: id,
-            $set: {
-                role: 'admin'
+
+        const user = await UserModel.findOneAndUpdate(
+            { _id: req.params.id },
+            {
+                $set:
+                {
+                    role: "admin"
+                }
             }
-        })
+        )
 
         return res.json({ message: `User Updated to Admin !!`, user })
     }
@@ -104,6 +113,7 @@ exports.makeAdmin = async (req, res) => {
     }
 
 }
+// test 1
 exports.humiliationToUser = async (req, res) => {
 
 
@@ -123,13 +133,16 @@ exports.humiliationToUser = async (req, res) => {
             return res.status(422).status(400).json({ message: "You Cant humiliation 'User' to 'User' " })
         }
 
-        const { id } = req.params;
-        const user = await UserModel.findOneAndUpdate({
-            _id: id,
-            $set: {
-                role: 'user'
+
+        const user = await UserModel.findOneAndUpdate(
+            { _id: req.params.id },
+            {
+                $set:
+                {
+                    role: "user"
+                }
             }
-        })
+        )
 
         return res.json({ message: `User humiliation to User !!`, user })
     }
@@ -139,6 +152,7 @@ exports.humiliationToUser = async (req, res) => {
 
 
 }
+// test 1
 exports.changeInfo = async (req, res) => {
     try {
 
@@ -166,4 +180,5 @@ exports.changeInfo = async (req, res) => {
         return res.status(422).json(err.message)
     }
 }
+// test 1
 
