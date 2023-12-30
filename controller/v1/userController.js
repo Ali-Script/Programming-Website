@@ -112,8 +112,6 @@ exports.makeAdmin = async (req, res) => {
 }
 // test 1
 exports.humiliationToUser = async (req, res) => {
-
-
     try {
         const isvalidID = mongoose.Types.ObjectId.isValid(req.params)
 
@@ -130,7 +128,6 @@ exports.humiliationToUser = async (req, res) => {
             return res.status(422).status(400).json({ message: "You Cant humiliation 'User' to 'User' " })
         }
 
-
         const user = await UserModel.findOneAndUpdate(
             { _id: req.params.id },
             {
@@ -146,7 +143,6 @@ exports.humiliationToUser = async (req, res) => {
     catch (err) {
         return res.status(422).json({ message: err.message })
     }
-
 
 }
 // test 1
