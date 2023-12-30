@@ -15,5 +15,8 @@ router
 router
     .route("/getAll")
     .get(authMiddleware, isAdmin, notificationController.getAll)
+router
+    .route("/remove/:id")
+    .delete(authMiddleware, isAdmin, notificationController.remove)
 
 module.exports = router;
