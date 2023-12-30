@@ -167,7 +167,7 @@ exports.changeInfo = async (req, res) => {
             role: count > 0 ? 'user' : 'admin'
         }).select("-Password").lean()
 
-        return res.json({ message: "UserInfo Updated successfully !!", user })
+        return res.json({ message: "UserInfo Updated Successfully !!", user })
     }
     catch (err) {
         return res.status(422).json(err.message)
