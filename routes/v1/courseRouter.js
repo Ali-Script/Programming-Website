@@ -56,6 +56,7 @@ router
 router
     .route("/session/remove/:id")
     .delete(authMiddleware, isAdmin, sessionController.deleteOne)
+
 router
     .route("/register/:CourseId")
     .post(authMiddleware, usersCoursesController.create)
