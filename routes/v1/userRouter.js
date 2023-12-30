@@ -24,5 +24,4 @@ router
     .route('/changeInfo')
     .put(authMiddleware, userController.changeInfo)
 
-
 module.exports = router
