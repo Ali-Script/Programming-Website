@@ -23,6 +23,7 @@ exports.create = async (req, res) => {
             Course: CourseId,
             Price: coursePrice.price,
         })
+
         return res.json(create);
     }
     catch (err) {
