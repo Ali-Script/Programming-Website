@@ -7,12 +7,12 @@ const router = express.Router()
 
 router
     .route('/banUser/:id')
-    .post(authMiddleware, isAdmin, userController.banUser)
+    .put(authMiddleware, isAdmin, userController.banUser)
 router
     .route('/getAll')
     .get(authMiddleware, isAdmin, userController.getAll)
 router
-    .route('/removeOneUser/:id')
+    .route('/remove/:id')
     .delete(authMiddleware, isAdmin, userController.removeOneUser)
 router
     .route('/makeAdmin/:id')
@@ -23,5 +23,6 @@ router
 router
     .route('/changeInfo')
     .put(authMiddleware, userController.changeInfo)
+
 
 module.exports = router
