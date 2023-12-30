@@ -68,8 +68,6 @@ exports.removeOneUser = async (req, res) => {
             return res.status(400).json({ message: "You Cant Remove Another Admins" })
         }
 
-
-
         const user = await UserModel.findOneAndRemove({ _id: id })
 
         return res.json({ message: `User Removed Succsessfully !!`, user })
