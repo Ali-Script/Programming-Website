@@ -36,5 +36,21 @@ exports.getAll = async (req, res) => {
         return res.json(getNotif)
     }
     catch (err) { return res.status(422).json({ message: err.message }); }
+}// test 1
+exports.remove = async (req, res) => {
+    try {
+
+        const isvalidID = mongoose.Types.ObjectId.isValid(req.params.id)
+        if (!isvalidID) {
+            return res.status(422).json({ message: "Invalid ObjectId !!" })
+        }
+
+        const getNotif = await notificationModel.findOneAndDelete({ _id: req.params.id }).lean()
+        if (!getNotif) return res.status(404).json({ message: "Notif not found !!" })
+
+        return res.json(getNotif)
+    }
+    catch (err) { return res.status(422).json({ message: err.message }); }
 }
 // test 1
+
