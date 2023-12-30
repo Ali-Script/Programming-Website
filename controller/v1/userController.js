@@ -109,7 +109,6 @@ exports.makeAdmin = async (req, res) => {
     catch (err) {
         return res.status(422).json({ message: err.message })
     }
-
 }
 // test 1
 exports.humiliationToUser = async (req, res) => {
