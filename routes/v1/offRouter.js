@@ -11,13 +11,13 @@ router
     .post(authMiddleware, isAdmin, offController.create)
 router
     .route("/getAll")
-    .get(authMiddleware, isAdmin, offController.getAll)
+    .put(authMiddleware, isAdmin, offController.getAll)
 router
     .route("/setToAll")
     .post(authMiddleware, isAdmin, offController.setToAll)
 router
     .route("/use/:code")
-    .post(authMiddleware, offController.use)
+    .put(authMiddleware, offController.use)
 router
     .route("/remove/:code")
     .delete(authMiddleware, isAdmin, offController.remove)
