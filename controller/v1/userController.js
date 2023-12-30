@@ -43,6 +43,7 @@ exports.getAll = async (req, res) => {
         allUsers.forEach(user => {
             delete user["Password"]
         })
+
         return res.json(allUsers)
     }
     catch (err) {
