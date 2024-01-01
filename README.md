@@ -6,7 +6,7 @@
  [![ex](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
  [![db](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 
-## [APIs]([https://github.com/Ali-Script/Programming-Website?tab=readme-ov-file#apis:~:text=base%20models%20%26%20feature%20%F0%9F%91%87%F0%9F%8F%BB-,APIs,-POST%20%20%20http%3A](https://github.com/Ali-Script/Programming-Website?tab=readme-ov-file#apis-1))
+## [APIs](APIs)
 
 ### You can use this progect to create a website and post educational courses & videos or otherwise in the website 
 ### This project has not been definitively deployed and is only included in my page for sample work
