@@ -9,9 +9,6 @@
 ### You can use this progect to create a website and post educational courses & videos or otherwise in the website 
 ### This project has not been definitively deployed and is only included in my page for sample work
 
-##### Data base models & feature 👇🏻
-<img src="./public/info/models.png" height="500px">
-
 <div align="left">
  
   ## Dependencies.
@@ -38,6 +35,11 @@
 ### Set route and dependencies in postman
 
 <img src="./public/info/postman.png" weight="100px" height="240px">
+
+
+##### Data base models & feature 👇🏻
+<img src="./public/info/models.png" height="500px">
+
 
   <details>
 <summary><h1>APIs<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="40px" /></h1></summary>
@@ -143,12 +145,12 @@ DELETE http://localhost:4000/v1/ticket/removeAnswer/:id'    Middlewares: Auth, A
 ## Abilities 
 
 ``` py
-
-1. Hash User Password (no one can see the password)
-2. Decode The Password
-3. Protection Of All Important APIs
-4. Encryption of Database Data
-5. Easy And Safe Access To Admin Dashboad (Management dashboard)
+1. Send Email To User
+2. Hash User Password (no one can see the password)
+3. Decode The Password
+4. Protection Of All Important APIs
+5. Encryption of Database Data
+6. Easy And Safe Access To Admin Dashboad (Management dashboard)
 
 ```
   <details>
@@ -175,3 +177,38 @@ DELETE http://localhost:4000/v1/ticket/removeAnswer/:id'    Middlewares: Auth, A
 ```
    
  </details>
+
+---
+  
+<div align="center">
+
+## TECHNOLOGY USED
+
+ [![nodejs](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/docs/latest/api/)
+ [![ex](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+ [![db](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+ [![db](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)](https://www.mongodb.com/)
+ [![db](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.mongodb.com/)
+ [![db](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.mongodb.com/)
+ [![db](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)](https://www.mongodb.com/)
+
+## OS
+
+ [![db](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.mongodb.com/)
+
+ ## MORE PACKAGE
+ 
+ bcrypt : ![bcrypt](https://img.shields.io/npm/dw/bcrypt)
+ body-parser : ![body-parser](https://img.shields.io/npm/dw/body-parser)
+ cors : ![cors](https://img.shields.io/npm/dw/cors)
+ dotenv : ![dotenv](https://img.shields.io/npm/dw/dotenv)
+ email-validator : ![email-validator](https://img.shields.io/npm/dw/email-validator)
+ express : ![express](https://img.shields.io/npm/dw/express)
+ fastest-validator : ![fastest-validator](https://img.shields.io/npm/dw/fastest-validator)
+ jsonwebtoken : ![jsonwebtoken](https://img.shields.io/npm/dw/jsonwebtoken)
+ mongoose : ![mongoose](https://img.shields.io/npm/dw/mongoose)
+ morgan : ![morgan](https://img.shields.io/npm/dw/morgan)
+ multer : ![multer](https://img.shields.io/npm/dw/multer)
+ nodemailer : ![nodemailer](https://img.shields.io/npm/dw/nodemailer)
+ 
+ nodemon : ![nodemon](https://img.shields.io/npm/dw/nodemon)
