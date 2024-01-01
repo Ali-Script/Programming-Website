@@ -8,7 +8,7 @@ const isAdmin = require("./../../middlewares/isAdmin");
 
 router
     .route("/create")
-    .post(authMiddleware, isAdmin, ticketController.create);
+    .post(authMiddleware, ticketController.create);
 router
     .route("/getAll")
     .get(authMiddleware, isAdmin, ticketController.getAll);
