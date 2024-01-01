@@ -6,7 +6,6 @@
  [![ex](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
  [![db](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 
-## [APIs](APIs)
 
 ### You can use this progect to create a website and post educational courses & videos or otherwise in the website 
 ### This project has not been definitively deployed and is only included in my page for sample work
