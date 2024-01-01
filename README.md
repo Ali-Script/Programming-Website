@@ -43,14 +43,18 @@
 <summary><h1>APIs<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="40px" /></h1></summary>
 
 ``` js
+
+
 POST   http://localhost:4000/v1/auth/register {UserName, Password, confirmPassword, email, PhoneNum}
 POST   http://localhost:4000/v1/auth/login {identifeir , password}
 GET    http://localhost:4000/v1/auth/getme  Middlewares: Auth  
+
 
 POST   http://localhost:4000/v1/categories/set  Middlewares: Auth, Admin {title, href}    
 GET    http://localhost:4000/v1/categories/getOne/:id 
 GET    http://localhost:4000/v1/categories/getOne/:id 
 DELETE http://localhost:4000/v1/categories/removeOne/:id    Middlewares: Auth, Admin
+
 
 POST   http://localhost:4000/v1/courses/add    Middlewares: Auth, Admin, Multer {title, description, price, href, cover , status, teacher, category, off, keywords} 
 PUT    http://localhost:4000/v1/courses/update/:id    Middlewares: Auth, Admin, Multer {title, description, price, href, cover , status, teacher, category, off, keywords} 
@@ -63,6 +67,7 @@ GET    http://localhost:4000/v1/courses/presell Middlewares: Auth
 GET    http://localhost:4000/v1/courses/getAllCourse/:category  Middlewares: Auth 
 GET    http://localhost:4000/v1/courses/all Middlewares: Auth 
 
+
 POST   http://localhost:4000/v1/comments/create Middlewares: Auth  {body, course, :score}
 DELETE http://localhost:4000/v1/comments/remove/:id Middlewares: Auth, Admin
 PUT    http://localhost:4000/v1/comments/accept/:id Middlewares: Auth, Admin
@@ -70,10 +75,12 @@ PUT    http://localhost:4000/v1/comments/reject/:id Middlewares: Auth, Admin
 POST   http://localhost:4000/v1/comments/answer/:id Middlewares: Auth, Admin {body}
 GET    http://localhost:4000/v1/comments/getAll Middlewares: Auth, Admin
 
+
 POST   http://localhost:4000/v1/contactus/set   Middlewares: Auth  {body}
 GET    http://localhost:4000/v1/contactus/all   Middlewares: Auth, Admin
 DELETE http://localhost:4000/v1/contactus/remove/:id    Middlewares: Auth, Admin
 POST   http://localhost:4000/v1/contactus/all   Middlewares: Auth, Admin {email, answer}
+
 
 POST   http://localhost:4000/v1/menu/set    Middlewares: Auth, Admin {title, href}
 GET    http://localhost:4000/v1/menu/getall Middlewares: Auth 
@@ -81,12 +88,15 @@ POST   http://localhost:4000/v1/menu/setsub/:parentID   Middlewares: Auth, Admin
 DELETE http://localhost:4000/v1/menu/remove/:id Middlewares: Auth, Admin
 DELETE http://localhost:4000/v1/menu/removesub/:id  Middlewares: Auth, Admin
 
+
 POST   http://localhost:4000/v1/newsletter/create   Middlewares: Auth  {email}
 GET    http://localhost:4000/v1/newsletter/getAll   Middlewares: Auth, Admin
+
 
 POST   http://localhost:4000/v1/notification/send   Middlewares: Auth, Admin {message, adminID}
 GET    http://localhost:4000/v1/notification/get    Middlewares: Auth, Admin 
 GET    http://localhost:4000/v1/notification/getAll Middlewares: Auth, Admin 
+
 
 POST   http://localhost:4000/v1/off/create  Middlewares: Auth, Admin {code, percent, course, count}
 GET    http://localhost:4000/v1/off/getAll  Middlewares: Auth, Admin
@@ -94,7 +104,9 @@ PUT    http://localhost:4000/v1/off/settoall    Middlewares: Auth, Admin {off}
 PUT    http://localhost:4000/v1/off/use/:code   Middlewares: Auth, Admin {course}
 DELETE http://localhost:4000/v1/off/remove/:code    Middlewares: Auth, Admin 
 
+
 GET    http://localhost:4000/v1/search/:keyword Middlewares: Auth  
+
 
 POST   http://localhost:4000/v1/department/add  Middlewares: Auth, Admin {title}
 GET    http://localhost:4000/v1/department/getall   Middlewares: Auth 
@@ -111,6 +123,7 @@ PUT    http://localhost:4000/v1/users/makeadmin/:id'    Middlewares: Auth, Admin
 PUT    http://localhost:4000/v1/users/humiliationToUser/:id'    Middlewares: Auth, Admin
 PUT    http://localhost:4000/v1/users/changeInfo'   Middlewares: Auth, Admin {UserName, Password,confirmPassword, email, PhoneNum, }
 
+
 POST   http://localhost:4000/v1/ticket/create'  Middlewares: Auth  { departmentID, departmentSubID, course, body, priority }
 GET    http://localhost:4000/v1/ticket/getall'  Middlewares: Auth, Admin
 GET    http://localhost:4000/v1/ticket/myTickets'   Middlewares: Auth  
@@ -118,11 +131,6 @@ POST   http://localhost:4000/v1/ticket/answer'  Middlewares: Auth, Admin {body, 
 GET    http://localhost:4000/v1/ticket/:id/answer'  Middlewares: Auth, Admin 
 DELETE http://localhost:4000/v1/ticket/remove/:id'  Middlewares: Auth, Admin 
 DELETE http://localhost:4000/v1/ticket/removeAnswer/:id'    Middlewares: Auth, Admin 
-
-
-
-
-
 
 
 ```
