@@ -15,7 +15,7 @@
 <div align="left">
  
   ## Dependencies.
-  ``` md
+  ``` py
  1. install Node-js
  2.   ``    Postman
  3.   ``    Mongodb
@@ -31,18 +31,18 @@
   
   <div align="center">
   
- Set your jwt token (It will be sent to you when you register)
+### Set your jwt token (It will be sent to you when you register)
     
 <img src="./public/info/auth.png" weight="100px" height="200px">
 
- Set route and dependencies in postman
+### Set route and dependencies in postman
 
 <img src="./public/info/postman.png" weight="100px" height="240px">
 
   <details>
 <summary><h1>APIs<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="40px" /></h1></summary>
 
-``` js
+``` py
 
 
 POST   http://localhost:4000/v1/auth/register {UserName, Password, confirmPassword, email, PhoneNum}
@@ -136,4 +136,42 @@ DELETE http://localhost:4000/v1/ticket/removeAnswer/:id'    Middlewares: Auth, A
 ```
   </details>
 
-  all APIs set on localhost:4000 if you want to change the port, just download the progect and change PORT in the .env file
+####  *all APIs set on localhost:4000 if you want to change the port, just download the progect and change PORT in the .env file
+
+<div align="left">
+ 
+## Abilities 
+
+``` py
+
+1. Hash User Password (no one can see the password)
+2. Decode The Password
+3. Protection Of All Important APIs
+4. Encryption of Database Data
+5. Easy And Safe Access To Admin Dashboad (Management dashboard)
+
+```
+  <details>
+<summary><h3>More Abilities ... </h3></summary>
+
+``` py
+1.Signin
+2.Login
+3.GetUserProfile
+4.ManagementOfCategories
+5.ManagementOfComments
+6.ContactUs
+7.ManagementOfCourses
+8.ManagementOfDepartments
+9.ManagementOfSubDepartments
+10. ManagementOfMenu
+11. ManagementOfSunMenu
+12. JoinToNewsletter
+13. ManagementOfNotifications
+14. ManagementOfOffOnCourses
+15. Search
+16. SendTicketToSupport
+17. ManagementOfUsers
+```
+   
+ </details>
