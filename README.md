@@ -184,31 +184,31 @@ DELETE http://localhost:4000/v1/ticket/removeAnswer/:id'    Middlewares: Auth, A
 
 ## TECHNOLOGY USED
 
- [![nodejs](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/docs/latest/api/)
- [![ex](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
- [![db](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
- [![db](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)](https://www.mongodb.com/)
- [![db](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.mongodb.com/)
- [![db](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.mongodb.com/)
- [![db](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)](https://www.mongodb.com/)
+ [![nodejs](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://github.com/Ali-Script)
+ [![ex](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)](https://github.com/Ali-Script)
+ [![db](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://github.com/Ali-Script)
+ [![db](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)](https://github.com/Ali-Script)
+ [![db](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://github.com/Ali-Script)
+ [![db](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://github.com/Ali-Script)
+ [![db](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)](https://github.com/Ali-Script)
 
 ## OS
 
- [![db](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.mongodb.com/)
+ [![db](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Ali-Script)
 
  ## MORE PACKAGE
  
- bcrypt : ![bcrypt](https://img.shields.io/npm/dw/bcrypt)
- body-parser : ![body-parser](https://img.shields.io/npm/dw/body-parser)
- cors : ![cors](https://img.shields.io/npm/dw/cors)
- dotenv : ![dotenv](https://img.shields.io/npm/dw/dotenv)
- email-validator : ![email-validator](https://img.shields.io/npm/dw/email-validator)
- express : ![express](https://img.shields.io/npm/dw/express)
- fastest-validator : ![fastest-validator](https://img.shields.io/npm/dw/fastest-validator)
- jsonwebtoken : ![jsonwebtoken](https://img.shields.io/npm/dw/jsonwebtoken)
- mongoose : ![mongoose](https://img.shields.io/npm/dw/mongoose)
- morgan : ![morgan](https://img.shields.io/npm/dw/morgan)
- multer : ![multer](https://img.shields.io/npm/dw/multer)
- nodemailer : ![nodemailer](https://img.shields.io/npm/dw/nodemailer)
+ bcrypt : [![bcrypt](https://img.shields.io/npm/dw/bcrypt)](https://github.com/Ali-Script)
+ body-parser : [![body-parser](https://img.shields.io/npm/dw/body-parser)](https://github.com/Ali-Script)
+ cors : [![cors](https://img.shields.io/npm/dw/cors)](https://github.com/Ali-Script)
+ dotenv : [![dotenv](https://img.shields.io/npm/dw/dotenv)](https://github.com/Ali-Script)
+ email-validator : [![email-validator](https://img.shields.io/npm/dw/email-validator)](https://github.com/Ali-Script)
+ express : [![express](https://img.shields.io/npm/dw/express)](https://github.com/Ali-Script)
+ fastest-validator : [![fastest-validator](https://img.shields.io/npm/dw/fastest-validator)](https://github.com/Ali-Script)
+ jsonwebtoken : [![jsonwebtoken](https://img.shields.io/npm/dw/jsonwebtoken)](https://github.com/Ali-Script)
+ mongoose : [![mongoose](https://img.shields.io/npm/dw/mongoose)](https://github.com/Ali-Script)
+ morgan : [![morgan](https://img.shields.io/npm/dw/morgan)](https://github.com/Ali-Script)
+ multer : [![multer](https://img.shields.io/npm/dw/multer)](https://github.com/Ali-Script)
+ nodemailer : [![nodemailer](https://img.shields.io/npm/dw/nodemailer)](https://github.com/Ali-Script)
  
- nodemon : ![nodemon](https://img.shields.io/npm/dw/nodemon)
+ nodemon : [![nodemon](https://img.shields.io/npm/dw/nodemon)](https://github.com/Ali-Script)
