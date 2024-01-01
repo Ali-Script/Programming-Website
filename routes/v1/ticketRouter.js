@@ -26,12 +26,12 @@ router
     .post(authMiddleware, isAdmin, ticketController.answer);
 router
     .route("/:id/answer")
-    .get(authMiddleware, ticketController.getAnswer);
+    .get(authMiddleware, isAdmin, ticketController.getAnswer);
 router
     .route("/remove/:id")
-    .delete(authMiddleware, ticketController.remove);
+    .delete(authMiddleware, isAdmin, ticketController.remove);
 router
     .route("/removeAnswer/:id")
-    .delete(authMiddleware, ticketController.removeAnswer);
+    .delete(authMiddleware, isAdmin, ticketController.removeAnswer);
 
 module.exports = router;
