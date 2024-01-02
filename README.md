@@ -193,9 +193,7 @@ DELETE http://localhost:4000/v1/ticket/removeAnswer/:id'    Middlewares: Auth, A
  [![db](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://github.com/Ali-Script)
  [![db](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)](https://github.com/Ali-Script)
 
-## OS
 
- [![db](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Ali-Script)
 
  ## MORE PACKAGE USED
  
