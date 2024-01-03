@@ -23,7 +23,7 @@
  ``` md
  1. open terminal/cmd/gitbash in progect route
  2. type "npm i" //if the node_module folder does not exist
- 3. type "npm run dev" or "nodemon" to run peogect
+ 3. type "npm run dev" or "nodemon" to run progect
 ```
   ## How to send request to APIs ?
   
