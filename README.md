@@ -13,7 +13,7 @@
 <div align="left">
  
   ## Dependencies.
-  ``` py
+  ``` md
  1. install Node-js
  2.   ``    Postman
  3.   ``    Mongodb
