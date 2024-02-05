@@ -3,9 +3,13 @@
  # Programming Education Website (Back-End)
  #### Educational website full back-end "MVC Architecture" with 👇🏻
  
- <p><a href="https://github.com/ali-script"><img src="https://user-images.githubusercontent.com/74038190/238200441-1a797f46-efe4-41e6-9e75-5303e1bbcbfa.gif" style="width:100px;height:100px;"></a></p><p><a href="https://github.com/ali-script"><img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" style="width:50px;height:50px;"></a></p><p><a href="https://github.com/ali-script"><img src="https://user-images.githubusercontent.com/74038190/238200620-398b19b1-9aae-4c1f-8bc0-d172a2c08d68.gif" style="width:100px;height:100px;"></a></p>
+ <p><a href="https://github.com/ali-script"><img src="https://user-images.githubusercontent.com/74038190/238200441-1a797f46-efe4-41e6-9e75-5303e1bbcbfa.gif" style="width:100px;height:100px;"></a></p>
+ 
+ <p><a href="https://github.com/ali-script"><img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" style="width:50px;height:50px;"></a></p>
+ 
+ <p><a href="https://github.com/ali-script"><img src="https://user-images.githubusercontent.com/74038190/238200620-398b19b1-9aae-4c1f-8bc0-d172a2c08d68.gif" style="width:100px;height:100px;"></a></p>
 
-
+---
 
 ### You can use this progect to create a website and post educational courses & videos or otherwise in the website 
 ### This project has not been definitively deployed and is only included in my page for sample work
